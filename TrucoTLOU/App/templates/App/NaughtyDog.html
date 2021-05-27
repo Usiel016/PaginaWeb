@@ -1,0 +1,51 @@
+{% extends 'App/Inicio.html' %}
+
+{% load static %}
+
+    {% block content %}
+
+<body  class="page1">
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1><img src="{% static 'App/images/logo.png' %}" alt=""></a></h1>
+      <div id="countdown"></div>
+      <div class="clear"></div>
+      <div class="menu_block">
+        <nav>
+          <ul class="sf-menu">
+            <li><a href="{% url 'Inicio' %}">Inicio</a></li>
+            <li class="current"><a href="{% url 'NaughtyDog' %}">Naughty Dog</a></li>
+            <li><a href="{% url 'Modalidades' %}">Modalidades</a></li>
+            <li><a href="{% url 'Clases' %}">Clases</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+    <div class="content">
+        <div class="container_12">
+          <div class="grid_12">
+            <div class="box bx2">
+              <h3>Naughty Dog</h3>
+              <img src="{% static 'App/images/page2_img1.jpg' %}" alt="" class="img_inner">
+              <p>Naughty Dog, es una empresa desarrolladora de videojuegos estadounidense fundada por Andy Gavin y Jason Rubin en 1984 en Santa Mónica, California, conocida principalmente por ser la creadora de exitosas sagas, como Crash Bandicoot para PlayStation, Jak and Daxter para PlayStation 2, Uncharted para PlayStation 3, así como los juegos The Last of Us y The Last of Us Part II.</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="socials"> <a href="https://es-es.facebook.com/TheLastOfUsMexico"></a> <a href="https://twitter.com/naughty_dog?lang=es"></a> <a href="https://mx.linkedin.com/company/naughty-dog"></a> </div>
+      <div class="copy">Naughty Dog &copy; 2021 | Privacy Policy | Design by: <a href="https://www.naughtydog.com/">NaughtyDog.com</a></div>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'App/Inicio.html' %}
+
+{% load static %}
+
+    {% block content %}
+
+<body  class="page1">
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1><img src="{% static 'App/images/logo.png' %}" alt=""></a></h1>
+      <div id="countdown"></div>
+      <div class="clear"></div>
+      <div class="menu_block">
+        <nav>
+          <ul class="sf-menu">
+            <li><a href="{% url 'Inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'NaughtyDog' %}">Naughty Dog</a></li>
+            <li><a href="{% url 'Modalidades' %}">Modalidades</a></li>
+            <li class="current"><a href="{% url 'Clases' %}">Clases</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+    <div class="content">
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="box pb0 green">
+        <h3>Clases</h3>
+        <div class="block2"> <img src="{% static 'App/images/frontier.png' %}" alt="" class="img_inner i1">
+          <div class="text1">Frontier</a></div>
+          Rifle de palanca que derriba a los enemigos en dos disparos. </div>
+        <div class="block2"> <img src="{% static 'App/images/lanzagranadas.png' %}" alt="" class="img_inner i1 ">
+          <div class="text1">Lanzapapas</a></div>
+          Arma de efecto de área que permite derribar enemigos con dos disparos. </div>
+        <div class="block2"> <img src="{% static 'App/images/rafagas.png' %}" alt="" class="img_inner i1">
+          <div class="text1">Rifle de ráfagas</a></div>
+          Un monstruo de corto alcance con tres disparos por ráfaga que derriba a los enemigos en cinco disparos. </div>
+        <div class="clear"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="box bx2">
+        <h3></h3>
+        <div class="block2"> <img src="{% static 'App/images/rafagasch.jpg' %}" alt="" class="img_inner i1">
+          <div class="text1">Pistola de ráfagas</a></div>
+          Pistola de ráfagas de tres balas que derriba a los enemigos en cinco diparos. </div>
+        <div class="block2"> <img src="{% static 'App/images/variable.png' %}" alt="" class="img_inner i1 ">
+          <div class="text1">Rifle variable</a></div>
+          Rifle rápido y preciso que derriba con cuatro disparos; presione X mientras apuntas para usar el zoom de la mira variable. </div>
+        <div class="block2"> <img src="{% static 'App/images/tactica.png' %}" alt="" class="img_inner i1">
+          <div class="text1">Escopeta táctica</a></div>
+          Escopeta de medio alcance que derriba de dos disparos con poca dispersión. </div>
+        <div class="clear"></div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="socials"> <a href="https://es-es.facebook.com/TheLastOfUsMexico"></a> <a href="https://twitter.com/naughty_dog?lang=es"></a> <a href="https://mx.linkedin.com/company/naughty-dog"></a> </div>
+      <div class="copy">Naughty Dog &copy; 2021 | Privacy Policy | Design by: <a href="https://www.naughtydog.com/">NaughtyDog.com</a></div>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}

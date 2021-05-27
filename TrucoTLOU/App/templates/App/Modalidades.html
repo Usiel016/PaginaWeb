@@ -1,0 +1,68 @@
+{% extends 'App/Inicio.html' %}
+
+{% load static %}
+
+    {% block content %}
+
+<body  class="page1">
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1><img src="{% static 'App/images/logo.png' %}" alt=""></a></h1>
+      <div id="countdown"></div>
+      <div class="clear"></div>
+      <div class="menu_block">
+        <nav>
+          <ul class="sf-menu">
+            <li><a href="{% url 'Inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'NaughtyDog' %}">Naughty Dog</a></li>
+            <li class="current"><a href="{% url 'Modalidades' %}">Modalidades</a></li>
+            <li><a href="{% url 'Clases' %}">Clases</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+    <div class="content">
+        <div class="container_12">
+          <div class="grid_12">
+            <div class="box blue pb1">
+              <h3 class="head1">Modalidades</h3>
+              <img src="{% static 'App/images/tlou.png' %}" alt="" class="img_inner fleft">
+              <div class="extra_wrapper">
+                <div class="text1">Campaña de juego</div>
+                <p>De acuerdo con la trama de The Last of Us, en septiembre de 2013 se desata una pandemia en Estados Unidos ocasionada por una cepa del hongo Cordyceps, que al infectar a los humanos los convierte en criaturas caníbales, y que se transmite a través de una simple mordedura. </p>
+                En medio de la histeria colectiva, Joel (Troy Baker), su hija Sarah (Hana Hayes) y su hermano Tommy (Jeffrey Pierce) abandonan su hogar en los suburbios de Austin, Texas para evitar la infección, pero en el camino son interceptados por un oficial que asesina a Sarah al creer que está infectada. </div>
+              <div class="clear"></div>
+            </div>
+            <div class="box pt1 green pb1"> <img src="{% static 'App/images/faccionesmp.jpg' %}" alt="" class="img_inner fleft">
+              <div class="extra_wrapper">
+                <div class="text1">Facciones MP</div>
+                <p>En Facciones,los jugadores dirigen un clan de sobrevivientes a lo largo de 12 semanas, ya sea como "Luciérnagas" (amarillas) o "Cazadores" (azul). No hay habilidades multijugador únicas para ninguna de las facciones, y al final de 12 semanas, elegir la otra facción no restablece el progreso del jugador. </p>
+                Cada partido jugado cuenta como un día, y da a los jugadores oportunidades de reunir suministros para alimentar el crecimiento y el progreso del clan. </div>
+              <div class="clear"></div>
+            </div>
+            <div class="box bx2 pt1"> <img src="{% static 'App/images/leftbehind.png' %}" alt="" class="img_inner fleft">
+              <div class="extra_wrapper">
+                <div class="text1">Left Behind</div>
+                <p>Después de una pelea que deja a Joel gravemente herido, Ellie busca suministros en un centro comercial abandonado para curarlo. Ella descubre un botiquín en un helicóptero militar abandonado. Volviendo a Joel, Ellie se ve obstaculizada por los infectados y los miembros de un grupo humano hostil. </p>
+                Ella lucha para regresar al inconsciente Joel, trata su herida abierta y lo lleva a buscar un escondite para el próximo invierno. </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="socials"> <a href="https://es-es.facebook.com/TheLastOfUsMexico"></a> <a href="https://twitter.com/naughty_dog?lang=es"></a> <a href="https://mx.linkedin.com/company/naughty-dog"></a> </div>
+      <div class="copy">Naughty Dog &copy; 2021 | Privacy Policy | Design by: <a href="https://www.naughtydog.com/">NaughtyDog.com</a></div>
+    </div>
+  </div>
+</footer>
+
+{% endblock %}
