@@ -17,3 +17,7 @@ def Modalidades(request):
 def Clases(request):
 
     return render(request, 'App/Clases.html')    
+
+def Tienda(request):
+
+    return render(request, 'App/Tienda.html')   

@@ -1,0 +1,179 @@
+{% extends 'App/Inicio.html' %}
+
+{% load static %}
+
+    {% block content %}
+    
+<head>
+<link rel="stylesheet" href="{% static 'App/css/bootstrap.min.css' %}">
+</head>
+
+<body  class="page1">
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <h1><img src="{% static 'App/images/logo.png' %}" alt=""></a></h1>
+      <div id="countdown"></div>
+      <div class="clear"></div>
+      <div class="menu_block">
+        <nav>
+          <ul class="sf-menu">
+            <li><a href="{% url 'Inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'NaughtyDog' %}">Naughty Dog</a></li>
+            <li><a href="{% url 'Modalidades' %}">Modalidades</a></li>
+            <li><a href="{% url 'Clases' %}">Clases</a></li>
+            <li class="current"><a href="{% url 'Tienda' %}">Tienda</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+<div class="brand_color">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Contamos con envios gratis</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+      <!-- our product -->
+      <div class="product">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="title">
+                     
+                     <span>Aquí encontraras la mejor calidad y el mejor precio en productos de The Last of Us.</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="product-bg">
+         <div class="product-bg-white">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/gorra.png' %}"/></i>
+                     <h3>Gorra plana de TLOU 2</h3>
+                     <span>$100.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/abrigo.png' %}"/></i>
+                     <h3>Abrigo de Joel</h3>
+                     <span>$700.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/playera.png' %}"/></i>
+                     <h3>Playera de Ellie</h3>
+                     <span>$150.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/gorra2.png' %}"/></i>
+                     <h3>Gorra plana Luciernagas</h3>
+                     <span>$100.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/patito.png' %}"/></i>
+                     <h3>Patito de Tess</h3>
+                     <span>$150.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/funko2.png' %}"/></i>
+                     <h3>Funko Pop de Joel</h3>
+                     <span>$350.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/funko.png' %}"/></i>
+                     <h3>Funko Pop de Ellie</h3>
+                     <span>$350.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/zombie.png' %}"/></i>
+                     <h3>Patito chasqueador</h3>
+                     <span>$150.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/guitarra.png' %}"/></i>
+                     <h3>Guitarra de edición</h3>
+                     <span>$1500.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/diario.png' %}"/></i>
+                     <h3>Libreta de Ellie</h3>
+                     <span>$125.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/emblema.png' %}"/></i>
+                     <h3>Insignia de Ellie</h3>
+                     <span>$50.00</span>
+                  </div>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <div class="product-box">
+                     <i><img src="{% static 'App/images/taza.png' %}"/></i>
+                     <h3>Taza para café</h3>
+                     <span>$75.00</span>
+                  </div>
+               </div>
+               </div>
+            </div>
+         </div>
+
+         <footer>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="socials"> <a href="https://es-es.facebook.com/TheLastOfUsMexico"></a> <a href="https://twitter.com/naughty_dog?lang=es"></a> <a href="https://mx.linkedin.com/company/naughty-dog"></a> </div>
+      <div class="copy">Naughty Dog &copy; 2021 | Privacy Policy | Design by: <a href="https://www.naughtydog.com/">NaughtyDog.com</a></div>
+    </div>
+  </div>
+</footer>
+
+      <script>
+         $(document).ready(function(){
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         
+      </script> 
+
+{% endblock %}
